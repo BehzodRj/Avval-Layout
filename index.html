@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bazar Rapido</title>
+</head>
+
+<body>
+    <div class="header_container">
+        <div class="header_content">
+            <img src="./img/logo.png" alt="">
+
+            <div class="header_list">
+                <div class="header_items">
+                    <img src="./img/receiveOrder.svg" alt="">
+                    <h1>Receive Order</h1>
+                </div>
+
+                <div class="header_items">
+                    <img src="./img/checkOrder.svg" alt="">
+                    <h1>Check Order status</h1>
+                </div>
+
+                <div class="header_items">
+                    <img src="./img/cart.svg" alt="">
+                    <h1>Cart</h1>
+                </div>
+
+                <div class="header_items">
+                    <img src="./img/faq.svg" alt="">
+                    <h1>FAQ</h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div id="navbar" class="navbar_container">
+        <div class="navbar_content">
+            <img class="times" src="./img/times.svg" alt="" onclick="navbarClose()">
+            <div class="navbar-contacts_block">
+                <div class="navbar-contacts_items">
+                    <img src="./img/wahtsapp.svg" alt="">
+                    <img src="./img/viber.svg" alt="">
+                    <img src="./img/telegram.svg" alt="">
+                </div>
+                <h1 class="phone_number">+922 98 700 70 70</h1>
+                <div class="navbar-call_block">
+                    <img src="./img/phone.svg" alt="">
+                    <h1>Заказать звонок</h1>
+                </div>
+            </div>
+            <div class="navbar-catalog_content">
+                <div class="navbar-catalog_block">
+                    <div class="navbar-catalog_items">
+                        <div class="nav_block">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <h1>Каталог товаров</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-menu_content">
+                <div class="navbar-menu_items">
+                    <img src="./img/receiveOrder.svg" alt="">
+                    <h1>Receive Order</h1>
+                </div>
+
+                <div class="navbar-menu_items">
+                    <img src="./img/checkOrder.svg" alt="">
+                    <h1>Check Order status</h1>
+                </div>
+
+                <div class="navbar-menu_items">
+                    <img src="./img/cart.svg" alt="">
+                    <h1>Cart</h1>
+                </div>
+
+                <div class="navbar-menu_items">
+                    <img src="./img/faq.svg" alt="">
+                    <h1>FAQ</h1>
+                </div>
+            </div>
+
+            <div class="navbar-date_container">
+                <h1 class="title">Душанбе, ул. Рудаки, д. 27</h1>
+
+                <div class="navbar-date_items">
+                    <h1>Пн - Пт: 10.00 - 20.00, <br> Сб - Вс: 11.00 - 20.00</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Navbar -->
+
+    <div class="container">
+        <div class="menu_content">
+            <div onclick="navbarOpen()" class="catalog_block mobile">
+                <div class="catalog_items">
+                    <div class="navbar_block">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <h1>Меню</h1>
+                </div>
+            </div>
+
+            <div onclick="dropDownOpen()" class="catalog_block web">
+                <div class="catalog_items">
+                    <div class="navbar_block">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <h1>Каталог товаров</h1>
+                </div>
+
+                <div id="dropDown" class="drop_down-content">
+                    <div class="drop_down-items">
+                        <h1>Сhargers</h1>
+                        <img src="./img/arrow-right.svg" alt="">
+                    </div>
+
+                    <div class="drop_down-items">
+                        <h1>Holder</h1>
+                        <img src="./img/arrow-right.svg" alt="">
+                    </div>
+
+                    <div class="drop_down-items">
+                        <h1>Holder</h1>
+                        <img src="./img/arrow-right.svg" alt="">
+                    </div>
+
+                    <div class="drop_down-items">
+                        <h1>Holder</h1>
+                        <img src="./img/arrow-right.svg" alt="">
+                    </div>
+
+                    <div class="drop_down-items">
+                        <h1>Holder</h1>
+                        <img src="./img/arrow-right.svg" alt="">
+                    </div>
+
+                    <div class="drop_down-items">
+                        <h1>Holder</h1>
+                        <img src="./img/arrow-right.svg" alt="">
+                    </div>
+
+                    <div class="drop_down-items">
+                        <h1>Holder</h1>
+                        <img src="./img/arrow-right.svg" alt="">
+                    </div>
+
+                    <h2>Показать еще</h2>
+                </div>
+
+            </div>
+
+            <div class="search_block">
+                <input type="search" placeholder="Что вы ищете?">
+                <img src="./img/search.svg" alt="">
+            </div>
+        </div>
+
+        <div class="products_container">
+            <div class="products_content">
+                <div class="products_block">
+                    <img src="./img/image 6.png" alt="">
+
+                    <div class="products_items">
+                        <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                        <h2 class="cost">109 900</h2>
+                        <h2 class="last_cost">99 900</h2>
+                    </div>
+
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="products_content">
+                <div class="products_block">
+                    <img src="./img/image 7.png" alt="">
+
+                    <div class="products_items">
+                        <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                        <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
+                    </div>
+
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="products_content">
+                <div class="products_block">
+                    <img src="./img/image 8.png" alt="">
+
+                    <div class="products_items">
+                        <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                        <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
+                    </div>
+
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="products_content">
+                <div class="products_block">
+                    <img src="./img/image 9.png" alt="">
+
+                    <div class="products_items">
+                        <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                        <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
+                    </div>
+
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="products_content">
+                <div class="products_block">
+                    <img src="./img/image 10.png" alt="">
+
+                    <div class="products_items">
+                        <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                        <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
+                    </div>
+
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="products_content">
+                <div class="products_block">
+                    <img src="./img/image 11.png" alt="">
+
+                    <div class="products_items">
+                        <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                        <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
+                    </div>
+
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="products_content">
+                <div class="products_block">
+                    <img src="./img/image 12.png" alt="">
+
+                    <div class="products_items">
+                        <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                        <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
+                    </div>
+
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="products_content">
+                <div class="products_block">
+                    <img src="./img/image 13.png" alt="">
+
+                    <div class="products_items">
+                        <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                        <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
+                    </div>
+
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination_container">
+            <h1>1</h1>
+            <h1>2</h1>
+            <h1>3</h1>
+            <h1>4</h1>
+            <h1>5</h1>
+            <h1>6</h1>
+            <h1>
+                Next
+                <img src="./img/arrow-right.svg" alt="">
+            </h1>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h1>Bazar Rapido 2022</h1>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
