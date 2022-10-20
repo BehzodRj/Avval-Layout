@@ -365,7 +365,7 @@ body {
     background: #FFFFFF;
     border: 1px solid #D6D8DC;
     border-radius: 5px;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     margin-bottom: 20px;
 }
 
@@ -486,6 +486,12 @@ body {
     .container,
     .header_container {
         margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 1819px) {
+    .products_content {
+        flex-grow: 1;
     }
 }
 
