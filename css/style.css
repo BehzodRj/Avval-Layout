@@ -359,7 +359,7 @@ body {
 
 .products_content {
     position: relative;
-    width: 286px;
+    width: calc(23% - 25px);
     height: 410px;
     padding: 20px;
     background: #FFFFFF;
@@ -489,7 +489,13 @@ body {
     }
 }
 
-@media screen and (max-width: 1819px) {
+@media screen and (max-width: 1699px) {
+    .products_content {
+        width: calc(30% - 25px);
+    }
+}
+
+@media screen and (max-width: 1009px) {
     .products_content {
         flex-grow: 1;
     }
