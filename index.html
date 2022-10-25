@@ -6,28 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Bazar Rapido</title>
+    <title>Avval</title>
 </head>
 
 <body>
     <div class="header_container">
         <div class="header_content">
-            <img src="./img/logo.png" alt="">
+            <img class="logo" src="./img/logo.png" alt="">
 
-            <div class="header_list">
-                <div class="header_items">
-                    <img src="./img/receiveOrder.svg" alt="">
-                    <h1>Receive Order</h1>
+            <div class="menu-web_content">
+                <div onclick="dropDownOpen()" class="catalog_block">
+                    <div class="catalog_items">
+                        <div class="navbar_block">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <h1>Каталог</h1>
+                    </div>
+
+                    <div id="dropDown" class="drop_down-web-content">
+                        <div class="drop_down-items">
+                            <h1>Сhargers</h1>
+                            <img src="./img/arrow-right.svg" alt="">
+                        </div>
+
+                        <div class="drop_down-items">
+                            <h1>Holder</h1>
+                            <img src="./img/arrow-right.svg" alt="">
+                        </div>
+
+                        <div class="drop_down-items">
+                            <h1>Holder</h1>
+                            <img src="./img/arrow-right.svg" alt="">
+                        </div>
+
+                        <div class="drop_down-items">
+                            <h1>Holder</h1>
+                            <img src="./img/arrow-right.svg" alt="">
+                        </div>
+
+                        <div class="drop_down-items">
+                            <h1>Holder</h1>
+                            <img src="./img/arrow-right.svg" alt="">
+                        </div>
+
+                        <div class="drop_down-items">
+                            <h1>Holder</h1>
+                            <img src="./img/arrow-right.svg" alt="">
+                        </div>
+
+                        <div class="drop_down-items">
+                            <h1>Holder</h1>
+                            <img src="./img/arrow-right.svg" alt="">
+                        </div>
+
+                        <h2>Показать еще</h2>
+                    </div>
+
                 </div>
 
-                <div class="header_items">
-                    <img src="./img/checkOrder.svg" alt="">
-                    <h1>Check Order status</h1>
+                <div class="search_block">
+                    <input type="search" placeholder="Что вы ищете?">
+                    <img src="./img/search.svg" alt="">
                 </div>
+            </div>
 
+            <div class="header_block">
                 <div class="header_items">
+                    <div class="cart_block">
+                        <h3>1</h3>
+                    </div>
                     <img src="./img/cart.svg" alt="">
-                    <h1>Cart</h1>
+                    <h1>Корзина</h1>
                 </div>
 
                 <div class="header_items">
@@ -35,8 +87,9 @@
                     <h1>FAQ</h1>
                 </div>
             </div>
-
         </div>
+
+    </div>
     </div>
 
     <!-- Navbar -->
@@ -103,7 +156,9 @@
     <!-- End of Navbar -->
 
     <div class="container">
-        <div class="menu_content">
+
+        <div class="menu-mobile_content">
+
             <div onclick="navbarOpen()" class="catalog_block mobile">
                 <div class="catalog_items">
                     <div class="navbar_block">
@@ -124,10 +179,10 @@
                         <span></span>
                     </div>
 
-                    <h1>Каталог товаров</h1>
+                    <h1>Каталог</h1>
                 </div>
 
-                <div id="dropDown" class="drop_down-content">
+                <div id="dropDown" class="drop_down-mobile-content">
                     <div class="drop_down-items">
                         <h1>Сhargers</h1>
                         <img src="./img/arrow-right.svg" alt="">
@@ -175,144 +230,253 @@
         </div>
 
         <div class="products_container">
-            <div class="products_content">
-                <div class="products_block">
-                    <img src="./img/image 6.png" alt="">
+            <div class="product_title-block">
+                <h1 class="title">Все товары</h1>
 
-                    <div class="products_items">
-                        <h1 class="title">Protech Travel 2A White (P7100White)</h1>
-                        <h2 class="cost">109 900</h2>
-                        <h2 class="last_cost">99 900</h2>
+                <div class="product_sorting">
+                    <h1>Сортировать</h1>
+                    <select>
+                        <option value="">Сначала дешевые</option>
+                        <option value="">Сначала дорогие</option>
+                        <option value="">Новинки</option>
+                    </select>
+                </div>
+            </div>
+            <div class="products_cont">
+                <div class="products_content">
+                    <div class="products_block">
+                        <img src="./img/image 6.png" alt="">
+
+                        <div class="products_items">
+                            <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                            <h2 class="cost">109 900</h2>
+                            <h2 class="last_cost">99 900</h2>
+                        </div>
+
+                        <div class="products_block-button">
+                            <button>Add to Cart</button>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="products_block-button">
-                        <button>Add to Cart</button>
+                <div class="products_content">
+                    <div class="products_block">
+                        <img src="./img/image 7.png" alt="">
+
+                        <div class="products_items">
+                            <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                            <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
+                        </div>
+
+                        <div class="products_block-button">
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products_content">
+                    <div class="products_block">
+                        <img src="./img/image 8.png" alt="">
+
+                        <div class="products_items">
+                            <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                            <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
+                        </div>
+
+                        <div class="products_block-button">
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products_content">
+                    <div class="products_block">
+                        <img src="./img/image 9.png" alt="">
+
+                        <div class="products_items">
+                            <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                            <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
+                        </div>
+
+                        <div class="products_block-button">
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products_content">
+                    <div class="products_block">
+                        <img src="./img/image 10.png" alt="">
+
+                        <div class="products_items">
+                            <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                            <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
+                        </div>
+
+                        <div class="products_block-button">
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products_content">
+                    <div class="products_block">
+                        <img src="./img/image 11.png" alt="">
+
+                        <div class="products_items">
+                            <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                            <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
+                        </div>
+
+                        <div class="products_block-button">
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products_content">
+                    <div class="products_block">
+                        <img src="./img/image 11.png" alt="">
+
+                        <div class="products_items">
+                            <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                            <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
+                        </div>
+
+                        <div class="products_block-button">
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products_content">
+                    <div class="products_block">
+                        <img src="./img/image 12.png" alt="">
+
+                        <div class="products_items">
+                            <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                            <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
+                        </div>
+
+                        <div class="products_block-button">
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products_content">
+                    <div class="products_block">
+                        <img src="./img/image 13.png" alt="">
+
+                        <div class="products_items">
+                            <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                            <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
+                        </div>
+
+                        <div class="products_block-button">
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products_content">
+                    <div class="products_block">
+                        <img src="./img/image 13.png" alt="">
+
+                        <div class="products_items">
+                            <h1 class="title">Protech Travel 2A White (P7100White)</h1>
+                            <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
+                        </div>
+
+                        <div class="products_block-button">
+                            <button>Add to Cart</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="products_content">
-                <div class="products_block">
-                    <img src="./img/image 7.png" alt="">
-
-                    <div class="products_items">
-                        <h1 class="title">Protech Travel 2A White (P7100White)</h1>
-                        <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
-                    </div>
-
-                    <div class="products_block-button">
-                        <button>Add to Cart</button>
-                    </div>
+            <div class="pagination_container">
+                <div class="pagination_content">
+                    <h1>1</h1>
+                    <h1>2</h1>
+                    <h1>3</h1>
+                    <h1>4</h1>
+                    <h1>5</h1>
+                    <h1>6</h1>
+                    <h1>
+                        След.
+                        <img src="./img/arrow-right.svg" alt="">
+                    </h1>
                 </div>
+
+                <h1 class="description">Найдено: 126 товаров</h1>
             </div>
-
-            <div class="products_content">
-                <div class="products_block">
-                    <img src="./img/image 8.png" alt="">
-
-                    <div class="products_items">
-                        <h1 class="title">Protech Travel 2A White (P7100White)</h1>
-                        <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
-                    </div>
-
-                    <div class="products_block-button">
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="products_content">
-                <div class="products_block">
-                    <img src="./img/image 9.png" alt="">
-
-                    <div class="products_items">
-                        <h1 class="title">Protech Travel 2A White (P7100White)</h1>
-                        <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
-                    </div>
-
-                    <div class="products_block-button">
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="products_content">
-                <div class="products_block">
-                    <img src="./img/image 10.png" alt="">
-
-                    <div class="products_items">
-                        <h1 class="title">Protech Travel 2A White (P7100White)</h1>
-                        <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
-                    </div>
-
-                    <div class="products_block-button">
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="products_content">
-                <div class="products_block">
-                    <img src="./img/image 11.png" alt="">
-
-                    <div class="products_items">
-                        <h1 class="title">Protech Travel 2A White (P7100White)</h1>
-                        <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
-                    </div>
-
-                    <div class="products_block-button">
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="products_content">
-                <div class="products_block">
-                    <img src="./img/image 12.png" alt="">
-
-                    <div class="products_items">
-                        <h1 class="title">Protech Travel 2A White (P7100White)</h1>
-                        <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
-                    </div>
-
-                    <div class="products_block-button">
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="products_content">
-                <div class="products_block">
-                    <img src="./img/image 13.png" alt="">
-
-                    <div class="products_items">
-                        <h1 class="title">Protech Travel 2A White (P7100White)</h1>
-                        <h2 class="last_cost" style="color: #222222; margin-top: 7px;">99 900</h2>
-                    </div>
-
-                    <div class="products_block-button">
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="pagination_container">
-            <h1>1</h1>
-            <h1>2</h1>
-            <h1>3</h1>
-            <h1>4</h1>
-            <h1>5</h1>
-            <h1>6</h1>
-            <h1>
-                Next
-                <img src="./img/arrow-right.svg" alt="">
-            </h1>
         </div>
     </div>
 
-    <div class="footer">
-        <h1>Bazar Rapido 2022</h1>
+    <div class="footer_container">
+        <footer class="footer-title_block">
+            <div class="footer-title_items">
+                <h1>у вас есть вопросы? оставте ваш номер телефона и мы вам перезвоним</h1>
+
+                <div class="footer-phone_block">
+                    <input type="text" placeholder="Введите Ваш номер">
+                    <button>Отправить</button>
+                </div>
+            </div>
+        </footer>
+
+        <div class="footer_content">
+            <div class="footer-content_block">
+                <div class="footer-content_items">
+                    <h1>Каталог товаров</h1>
+
+                    <h2>Наушники</h2>
+                    <h2>Зарядные устройства</h2>
+                    <h2>Чехлы</h2>
+                    <h2>Браслеты и часы</h2>
+                    <h2>Сумки и рюкзаки</h2>
+                    <h2>Компьютеры и комплектующие</h2>
+                </div>
+
+                <div class="footer-content_items">
+                    <h1>Покупателям</h1>
+
+                    <h2>Акции</h2>
+                    <h2>Доставка и оплата</h2>
+                    <h2>Рассрочка</h2>
+                    <h2>Сотрудничество</h2>
+                </div>
+
+                <div class="footer-content_items">
+                    <h1>Контакты</h1>
+
+                    <h2>Call-центр</h2>
+                    <h2 class="phone">+992 710 71-71-71</h2>
+                    <h2>Пн-Вс 10:00 - 20:00</h2>
+                </div>
+            </div>
+
+            <div class="footer-content_socials">
+                <img class="footer_logo" src="./img/Logo.png" alt="">
+
+                <div class="socials_block">
+                    <img src="./img/instagram.svg" alt="">
+                    <h1>Instagram</h1>
+                </div>
+
+                <div class="socials_block">
+                    <img src="./img/telegram2.svg" alt="">
+                    <h1>Telegram</h1>
+                </div>
+            </div>
+
+            <div class="footer-content__confidentiality">
+                <h1>© 2022 Avval</h1>
+                <h1>Реквизиты</h1>
+                <h1>Политика конфиденциальности</h1>
+            </div>
+        </div>
     </div>
 
     <script src="./js/script.js"></script>
