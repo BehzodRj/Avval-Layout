@@ -10,6 +10,64 @@
 </head>
 
 <body>
+    <div id="modalFirstDropUp" class="modal-drop-up_container first">
+        <div class="modal-drop-up_content">
+            <img class="times" src="../Cart page/img/times2.svg" alt="" onclick="modalFirstDropUpClose()">
+
+            <div class="recipient_block">
+                <h1 class="title">Получатель</h1>
+
+                <!-- <form> -->
+                    <div class="recipient_items">
+                        <input type="text" placeholder="+992 _ _ _ _ _ _ _ _ _">
+                        <button onclick="modalSecondDropUpOpen()">Отправить</button>
+                    </div>
+
+                    <div class="recipient_items">
+                        <input type="text" placeholder="SMS подтверждение">
+                        <button onclick="modalSecondDropUpOpen()">Подтвердить</button>
+                    </div>
+                <!-- </form> -->
+
+                <h1 class="description">1/2</h1>
+            </div>
+
+            <div class="instructions_block">
+                <img src="../Cart page/img/instructions.svg" alt="">
+                <h1>Указывайте реальные данные</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalSecondDropUp" class="modal-drop-up_container second">
+        <div class="modal-drop-up_content">
+            <img class="times" src="../Cart page/img/times2.svg" alt="" onclick="modalSecondDropUpClose()">
+
+            <div class="recipient_block">
+                <div class="recipient-title_block">
+                    <img src="../Cart page/img/arrow-left.svg" alt="" onclick="modalGoBack()">
+                    <h1 class="title">Получатель</h1>
+                </div>
+
+                <form action="">
+                    <div class="recipient_items">
+                        <input type="text" placeholder="Имя и фамилия">
+                        <input type="text" placeholder="Адрес">
+                        <input type="text" placeholder="Служба доставки">
+                        <button>Оформить</button>
+                    </div>
+                </form>
+
+                <h1 class="description">2/2</h1>
+            </div>
+
+            <div class="instructions_block">
+                <img src="../Cart page/img/instructions.svg" alt="">
+                <h1>Указывайте реальные данные</h1>
+            </div>
+        </div>
+    </div>
+
     <div class="header_container">
         <div class="header_content">
             <img class="logo" src="../Cart page/img/logo.png" alt="">
@@ -287,7 +345,6 @@
 
                                 <div class="cart-product-price_block">
                                     <h1>99 900 TJS</h1>
-                                    <h2>109 900 TJS</h2>
                                 </div>
                             </div>
 
@@ -317,12 +374,10 @@
                         <h1 class="allProducts">Всего: 2 товара</h1>
                     </div>
 
-                    <button>Оформить</button>
+                    <button onclick="modalFirstDropUpOpen()">Оформить</button>
                 </div>
             </div>
         </div>
-
-
     </div>
 
     <script src="../Cart page/js/script.js"></script>
